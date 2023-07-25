@@ -25,7 +25,7 @@ void setup() {
   //Turn LCD backlight on
   ml.backlight();
 
-  //Set alarm time, define unit at line 
+  //Set alarm time, define unit at line 65 
   alarm=8;
 }
 
@@ -62,6 +62,7 @@ void loop() {
       ht=0;
       ml.clear();
     }
+    //Trigger alarm, define alarm time unit: ht=hours, mt=minute, ct=seconds
     if(ht+1>alarm){
       break;
     }
