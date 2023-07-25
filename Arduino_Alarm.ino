@@ -1,6 +1,7 @@
-/*Sketch by SpirosP
-  @PapadopSpiros on GitHub
-  @SpirosP on YouTube
+/* Sketch by SpirosP
+   @PapadopSpiros on GitHub
+   @SpirosP on YouTube
+   You may use my code on your projects for free. If you wish to edit or republish it, please credit me.
 */
 
 
