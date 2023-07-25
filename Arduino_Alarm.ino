@@ -1,3 +1,9 @@
+/*Sketch by SpirosP
+  @PapadopSpiros on GitHub
+  @SpirosP on YouTube
+*/
+
+
 //Import the Liquid Crystal I2C Library
 #include <LiquidCrystal_I2C.h>
 
