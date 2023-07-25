@@ -25,7 +25,7 @@ void setup() {
   //Turn LCD backlight on
   ml.backlight();
 
-  //Set alarm time
+  //Set alarm time, define unit at line 
   alarm=8;
 }
 
