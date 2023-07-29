@@ -12,7 +12,6 @@
 LiquidCrystal_I2C ml(0x27,16,2);
 
 //Declare variables
-int now;
 int i;
 int ct;
 int mt;
@@ -40,14 +39,14 @@ void setup() {
 void loop() {
 
   //Clock
-  for(now=0; now>-1; now++){
+  for(i=0; i>-1; i++){
     
     //One second delay
     delay(1000);
 
     //If a minute elapses
-    if(ct>59){
-      ct=1;
+    if(ct>58){
+      ct=0;
       mt=mt+1;
       ml.clear();
     }
@@ -71,7 +70,7 @@ void loop() {
       ml.clear();
     }
     //Trigger alarm, define alarm time unit: ht=hours, mt=minute, ct=seconds
-    if(ht+1>alarm){
+    if(mt+1>alarm){
       break;
     }
     ml.setCursor(0,0);
@@ -104,6 +103,9 @@ void loop() {
 
 //Alarm sound
 void sound(){
+  ml.setCursor(0,0);
+  ml.print("Wake up!");
+  i=0;
   for (i=0; i<100; i++){
     tone(buzzerpin,2051);
     delay(100);
