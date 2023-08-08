@@ -3,3 +3,4 @@ You may use my code on your projects for free. If you wish to edit or republish 
 Created by SpirosP:
 @Papadopspiros on GitHub
 @SpirosP on YouTube
+The code was compiled using the legacy Arduino IDE and tested on the Arduino Uno WiFi Rev2.
