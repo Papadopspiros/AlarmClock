@@ -18,7 +18,7 @@ int mt;
 int ht;
 int cl;
 
-//Set time variables
+//Declare time config variables
 int cpv;
 int ppv;
 int alarm;
