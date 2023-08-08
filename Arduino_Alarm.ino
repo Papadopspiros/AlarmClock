@@ -26,6 +26,10 @@ int alarm;
 //Set the pin of the buzzer
 int buzzerpin=12;
 
+//Set alarm sound parameters
+int del1=100;
+int del2=200;
+
 void setup() {
   
   //Initialize LCD
@@ -97,9 +101,9 @@ void sound(){
   i=0;
   for (i=0; i<100; i++){
     tone(buzzerpin,2051);
-    delay(100);
+    delay(del1);
     noTone(buzzerpin);
-    delay(200); 
+    delay(del2); 
   }
   i=0;
 }
