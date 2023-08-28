@@ -2,6 +2,8 @@
   @PapadopSpiros on GitHub
   @SpirosP on YouTube
   You may use my code on your projects for free. If you wish to edit or republish it, please credit me.
+  The code has been written, debuged and tested on the Arduino Uno Wi-Fi Rev 2.
+  Before compiling you will need to install the Liquid Crystal I2C library which you can find on the official Arduino website.
 */
 
 
@@ -17,6 +19,7 @@ int ct;
 int mt;
 int ht;
 int cl;
+int sp=2;
 
 //Declare time config variables
 int cpv;
@@ -100,12 +103,18 @@ void sound(){
   ml.print("Wake up!");
   i=0;
   for (i=0; i<100; i++){
-    tone(buzzerpin,2051);
-    delay(del1);
-    noTone(buzzerpin);
-    delay(del2); 
+    if (digitalRead(sp)=LOW) {
+      tone(buzzerpin,2051);
+      delay(del1);
+      noTone(buzzerpin);
+      delay(del2);
+    }
+    else {
+      break();
+    }
   }
   i=0;
+  ml.clear();
 }
 
 void settime() {
